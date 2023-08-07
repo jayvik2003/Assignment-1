@@ -1,4 +1,3 @@
-
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -103,7 +102,7 @@
 %	\logo{
 Assignment-1 
 
-\large{EE:23010 Probability and Random Process}
+\large{EE:23010 Probability and Random Processes}
 
 Indian Institute of Technology, Hyderabad
 %	}
@@ -216,108 +215,85 @@ EE22BTECH11025
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
-%\IEEEpeerreviewmaketitle
-Consider a triangle with vertices
-		\begin{align}
-			\label{eq:tri-pts}
-			\vec{A} = \myvec{1 \\ -1},\,
-			\vec{B} = \myvec{-4 \\ 6},\,
-			\vec{C} = \myvec{-3 \\ -5}
-		\end{align} 
-				
-\textbf Question(1.2.4): Verify that 
-		\begin{align}
-			\frac{BG}{GE} = 
-			\frac{CG}{GF} =
-			\frac{AG}{GD} =2 
-		\end{align}
-
-Show that $\vec{A}, \vec{G}$ and $\vec{D}$ are collinear. \\
-
-\textbf Solution: In order to verify the above equation 
-
-we first need to find G, \\
-
-G is the intersection of BE and CF
-
-so, using the parametric form given in 1.1.4 \\
-
-Equation of BE, 
-
+%\IEEEpeerreviewmaketitle	
+\section{Question 1.2.4}Verify that 
 \begin{align}
-			\vec{x}=\vec{B}+k\vec{m}
-		\end{align}
-		
-		where
-		
-		\begin{align}
-\vec{m}=\vec{E}-\vec{B}
-		\end{align}
-		
-is the direction vector of $BE$. \\
-
-Equation of CF, 
-
-\begin{align}
-			\vec{x}=\vec{C}+k\vec{m}
-		\end{align}
-		
-		where
-		
-		\begin{align}
-\vec{m}=\vec{F}-\vec{C}
-		\end{align}
-		
-is the direction vector of $CF$. \\
-
-Now, Solving for (3) and (5)
-
-We have \begin{align} \vec{x} = \myvec{-2 \\ 0}
+		\frac{BG}{GE} = 
+		\frac{CG}{GF} =
+		\frac{AG}{GD} = 2 
 \end{align}
-
-Thus,\begin{align} \vec{G} = \myvec{-2 \\ 0}
-\end{align} 
-
-Now,We know that $\vec{E}$ and $\vec{F}$ are midpoints of $CA$ 
-
-and $AB$ respectively.  
-
+\section{Solution}In order to verify the above equation we first need to find $\vec{G}$. 
+$\vec{G}$ is the intersection of $BE$ and $CF$
+Using the value of $\vec{G}$ from (1.2.3).
 \begin{align}
-\vec{E} = \frac{\vec{C}+\vec{A}}{2},\,
-\vec{F} = \frac{\vec{A}+\vec{B}}{2}
+\vec{G} = \myvec{-2 \\ 0}
+\end{align}
+Also,We know that $\vec{D}, \vec{E}$ and $\vec{F}$ are midpoints of $BC, CA$ and $AB$ respectively.
+\begin{align}
+		\vec{D} = \frac{\vec{B}+\vec{C}}{2},\,
+		\vec{E} = \frac{\vec{C}+\vec{A}}{2},\,
+		\vec{F} = \frac{\vec{A}+\vec{B}}{2}
 \end{align}
 \begin{align}
-\vec{E} = \frac{\myvec{-3 \\ -5}+\myvec{1 \\ -1}}{2},\,
-\vec{F} = \frac{\myvec{1 \\ -1}+\myvec{4 \\ -6}}{2}
+		\vec{D} = \frac{\myvec{-4 \\ 6}+\myvec{-3 \\ -5}}{2},\,
+		\vec{E} = \frac{\myvec{-3 \\ -5}+\myvec{1 \\ -1}}{2},\,
+		\vec{F} = \frac{\myvec{1 \\ -1}+\myvec{-4 \\ 6}}{2}
 \end{align}
 \begin{align}
-\vec{E} = \myvec{-1 \\ -3},\,
-\vec{F} = \myvec{\frac{5}{2} \\ \frac{-7}{2}}
+		\implies\vec{D} = \myvec{\frac{-7}{2} \\ \frac{1}{2}},\,
+		\implies\vec{E} = \myvec{-1 \\ -3},\,
+		\implies\vec{F} = \myvec{\frac{-3}{2} \\ \frac{5}{2}}
 \end{align}
-
-Using section formula for BGE from 1.2.1.1
-
+Taking direction vector of $BG,GE$,$GF,CG$,$AG,GD$
 \begin{align}
-\frac{k\vec{E} + \vec{B}}{k+1} = \vec{G}
+		\label{eq:tri-pts/12} \vec{G}-\vec{B} = \myvec{2 \\ -6} \\
+		\label{eq:tri-pts/13} \vec{E}-\vec{G} = \myvec{1 \\ 3} \\
+		\label{eq:tri-pts/14} \vec{F}-\vec{G} = \myvec{\frac{1}{2} \\ \frac{5}{2}} \\
+		\label{eq:tri-pts/15} \vec{G}-\vec{C} = \myvec{1 \\ 5} \\
+		\label{eq:tri-pts/16} \vec{G}-\vec{A} = \myvec{-3 \\ 1} \\
+		\label{eq:tri-pts/17} \vec{D}-\vec{G} = \myvec{\frac{-3}{2} \\ \frac{1}{2}}
 \end{align}
+Using the equation,
+ 		\eqref{eq:tri-pts/12},
+		\eqref{eq:tri-pts/13},
+		\eqref{eq:tri-pts/14},
+		\eqref{eq:tri-pts/15},
+		\eqref{eq:tri-pts/16},
+		\eqref{eq:tri-pts/17}
+Taking norm of $BG,GE$,$GF,CG$,$AG,GD$ 
 \begin{align}
-\frac{k\myvec{-1 \\ -3} + \myvec{-4 \\ 6}}{k+1} = \myvec{-2 \\ 0} 
+		\label{eq:tri-pts/18} \norm{\vec{G}-\vec{B}} = \sqrt{2^2 + \brak{-6}^{2}} = \sqrt{40} \\
+		\label{eq:tri-pts/19} \norm{\vec{E}-\vec{G}} = \sqrt{1^2 + 3^2} = \sqrt{10} \\
+		\label{eq:tri-pts/20} \norm{\vec{F}-\vec{G}} = \sqrt{\brak{\frac{1}{2}}^{2} + \brak{\frac{5}{2}}^{2}} = \frac{\sqrt{26}}{2} \\  
+		\label{eq:tri-pts/21} \norm{\vec{G}-\vec{C}} = \sqrt{1^2 + 5^2} = \sqrt{26} \\
+		\label{eq:tri-pts/22} \norm{\vec{G}-\vec{A}} = \sqrt{\brak{-3}^{2}+1^2} = \sqrt{10} \\
+		\label{eq:tri-pts/23} \norm{\vec{D}-\vec{G}} = \sqrt{\brak{\frac{-3}{2}}^{2}+\brak{\frac{1}{2}}^{2}} = \frac{\sqrt{10}}{2}  
 \end{align}
-
-Solving for k in (13) we have, 
-
-k = 2 \\
-
-Thus,G divides BE in the ratio of 2:1  \begin{align}
-\frac{BG}{GE} = 2
+Now,using the equation
+		\eqref{eq:tri-pts/18},
+		\eqref{eq:tri-pts/19},
+		\eqref{eq:tri-pts/20},
+		\eqref{eq:tri-pts/21},
+		\eqref{eq:tri-pts/22},
+		\eqref{eq:tri-pts/23}
+\begin{enumerate}
+\item The value of $\frac{BG}{GE}$
+\begin{align}
+		\frac{BG}{GE} = \frac{\norm{\vec{G}-\vec{B}}}{\norm{\vec{E}-\vec{G}}} = \frac{\sqrt{40}}{\sqrt{10}} = 2 
 \end{align}
-
-Similarly,we can verify for CGF and AGD
-
-Hence,\begin{align}
-			\frac{BG}{GE} = 
-			\frac{CG}{GF} =
-			\frac{AG}{GD} =2 
-		\end{align}
-
+\item The value of $\frac{CG}{GF}$
+\begin{align} 
+		\frac{CG}{GF} = \frac{\norm{\vec{G}-\vec{C}}}{\norm{\vec{F}-\vec{G}}} = \frac{\sqrt{26}}{\frac{\sqrt{26}}{2}} = 2 
+\end{align}
+\item The value of $\frac{AG}{GD}$
+\begin{align}
+		\frac{AG}{GD} = \frac{\norm{\vec{G}-\vec{A}}}{\norm{\vec{D}-\vec{G}}} = \frac{\sqrt{10}}{\frac{\sqrt{10}}{2}} = 2 
+\end{align}
+\end{enumerate}
+Hence,
+\begin{align}
+		\frac{BG}{GE} = 
+		\frac{CG}{GF} =
+		\frac{AG}{GD} = 2
+\end{align}
 \end{document}
