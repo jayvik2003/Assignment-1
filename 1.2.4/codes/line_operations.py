@@ -18,3 +18,14 @@ def line_section(A,B,k):
 
     return P
 
+#intersection of lines
+def line_intersect(B,E,C,F):
+    m1 = dir_vec(B,E)
+    m2 = dir_vec(C,F)
+    p = np.zeros(2) 
+    p[0] = (m2[0]*B[0]-m1[0]*C[0])/(m2[0]-m1[0])
+    p[1] = (m2[1]*B[1]-m1[1]*C[1])/(m2[1]-m1[1])
+    
+    return p
+    
+

@@ -1,19 +1,27 @@
 import numpy as np
 
-from line_operations import line_section,dir_vec,norm_vec
+from line_operations import line_section,dir_vec,norm_vec,line_intersect
 
 A = np.array([1,-1])
 B = np.array([-4,6])
 C = np.array([-3,-5])
-D = np.array([0,0])
-E = np.array([0,0])
-F = np.array([0,0])
-G = np.array([-2,0])
 
+#initializing variables
+G = np.zeros(2) 
+D = np.zeros(2)
+E = np.zeros(2)
+F = np.zeros(2)
+
+#find D,E,F
 D = line_section(B,C,1.0)
 E = line_section(C,A,1.0)
 F = line_section(A,B,1.0)
 
+G = line_intersect(B,E,C,F)
+
+print("The vector G is",G)
+
+#finding the direction of vector
 BG = dir_vec(B,G)
 GE = dir_vec(G,E)
 GF = dir_vec(G,F)
@@ -21,6 +29,7 @@ CG = dir_vec(C,G)
 AG = dir_vec(A,G)
 GD = dir_vec(G,D)
 
+#finding the norm of vector
 n_BG = norm_vec(B,G)
 n_GE = norm_vec(G,E)
 n_GF = norm_vec(G,F)
