@@ -252,32 +252,37 @@ Also,We know that $\vec{D}, \vec{E}$ and $\vec{F}$ are midpoints of $BC, CA$ and
 \end{align}
 \end{enumerate}
 Using the equation,
- 		\eqref{eq:tri-pts/4},
-		\eqref{eq:tri-pts/5},
-		\eqref{eq:tri-pts/7},
-		\eqref{eq:tri-pts/8},
-		\eqref{eq:tri-pts/10},
-		\eqref{eq:tri-pts/11}.
-Taking norm of $BG,GE,GF,CG,AG,GD$ 
+ 		
+		
+		
+\begin{enumerate}
+\item Taking the norm of $BG$ and $GE$, from \eqref{eq:tri-pts/4} and \eqref{eq:tri-pts/5}, 
 \begin{align}
-		\label{eq:tri-pts/10} \norm{\vec{G}-\vec{B}} = \sqrt{2^2 + \brak{-6}^{2}} = \sqrt{40} \\
-		\label{eq:tri-pts/11} \norm{\vec{E}-\vec{G}} = \sqrt{1^2 + 3^2} = \sqrt{10} \\
-		\label{eq:tri-pts/12} \norm{\vec{F}-\vec{G}} = \sqrt{\brak{\frac{1}{2}}^{2} + \brak{\frac{5}{2}}^{2}} = \frac{\sqrt{26}}{2} \\  
-		\label{eq:tri-pts/13} \norm{\vec{G}-\vec{C}} = \sqrt{1^2 + 5^2} = \sqrt{26} \\
-		\label{eq:tri-pts/14} \norm{\vec{G}-\vec{A}} = \sqrt{\brak{-3}^{2}+1^2} = \sqrt{10} \\
-		\label{eq:tri-pts/15} \norm{\vec{D}-\vec{G}} = \sqrt{\brak{\frac{-3}{2}}^{2}+\brak{\frac{1}{2}}^{2}} = \frac{\sqrt{10}}{2}  
+		\label{eq:tri-pts/12} \norm{\vec{G}-\vec{B}} = \sqrt{2^2 + \brak{-6}^{2}} = \sqrt{40} \\
+		\label{eq:tri-pts/13} \norm{\vec{E}-\vec{G}} = \sqrt{1^2 + 3^2} = \sqrt{10} \\
 \end{align}
+\item Taking the norm of $GF$ and $CG$, from \eqref{eq:tri-pts/7} and \eqref{eq:tri-pts/8},	
+\begin{align}
+		\label{eq:tri-pts/15} \norm{\vec{F}-\vec{G}} = \sqrt{\brak{\frac{1}{2}}^{2} + \brak{\frac{5}{2}}^{2}} = \frac{\sqrt{26}}{2} \\  
+		\label{eq:tri-pts/16} \norm{\vec{G}-\vec{C}} = \sqrt{1^2 + 5^2} = \sqrt{26} \\
+\end{align}
+\item Taking the norm of $AG$ and $GD$, from \eqref{eq:tri-pts/10} and \eqref{eq:tri-pts/11}	
+\begin{align}
+		\label{eq:tri-pts/18} \norm{\vec{G}-\vec{A}} = \sqrt{\brak{-3}^{2}+1^2} = \sqrt{10} \\
+		\label{eq:tri-pts/19} \norm{\vec{D}-\vec{G}} = \sqrt{\brak{\frac{-3}{2}}^{2}+\brak{\frac{1}{2}}^{2}} = \frac{\sqrt{10}}{2}  
+\end{align}
+\end{enumerate}
 Now,
 \begin{enumerate}
-\item from equation \eqref{eq:tri-pts/10} and \eqref{eq:tri-pts/11},   
+\item from equation \eqref{eq:tri-pts/12} and \eqref{eq:tri-pts/13},   
 \begin{align}
 		\frac{BG}{GE} = \frac{\norm{\vec{G}-\vec{B}}}{\norm{\vec{E}-\vec{G}}} = \frac{\sqrt{40}}{\sqrt{10}} = 2 
 \end{align}
-\item from equation \eqref{eq:tri-pts/12} and \eqref{eq:tri-pts/13},
+\item from equation \eqref{eq:tri-pts/15} and \eqref{eq:tri-pts/16},
 \begin{align} 
 		\frac{CG}{GF} = \frac{\norm{\vec{G}-\vec{C}}}{\norm{\vec{F}-\vec{G}}} = \frac{\sqrt{26}}{\frac{\sqrt{26}}{2}} = 2 
 \end{align}
-\item from equation \eqref{eq:tri-pts/14} and \eqref{eq:tri-pts/15},
+\item from equation \eqref{eq:tri-pts/18} and \eqref{eq:tri-pts/19},
 \begin{align}
 		\frac{AG}{GD} = \frac{\norm{\vec{G}-\vec{A}}}{\norm{\vec{D}-\vec{G}}} = \frac{\sqrt{10}}{\frac{\sqrt{10}}{2}} = 2 
 \end{align}
